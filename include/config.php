@@ -1,2 +1,4 @@
 <?php
-define('API_PRODUCTS', 'http://localhost/tokobunga-backend/api/products.php');
+fetch("http://localhost:8000/api/products.php")
+  .then(res => res.json())
+  .then(data => console.log(data));
